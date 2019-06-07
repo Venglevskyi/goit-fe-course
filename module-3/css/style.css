@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/*сбросил настройки браузера по умолчанию..отступы*/
+
+ul.menu {
+    list-style-type: none;
+    text-align: center;
+    max-width: 1200px;
+    height: 25px;
+}
+/*убрал нумерованный список, выстроил по центру навигацию */
+
+.menu a {
+    color: grey;
+    text-decoration: none;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+}
+/*убрал подчеркивание ссылок, 
+сделал их серыми, установил размеры блока*/
+
+.menu li  {
+    display: inline-block;
+}
+/*перевел список в строчно-блочную модель*/
+
+a:hover {
+    color: blue;
+}
+
+main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article .post {
+    display: inline-block;
+
+}
+
+h3, p {
+    width: 420px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
