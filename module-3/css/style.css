@@ -33,21 +33,15 @@ a:hover {
 }
 
 main {
-    width: 1200px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-article .post {
+.post {
     display: inline-block;
-
+    width: 450;
 }
 
-h3, p {
-    width: 420px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
