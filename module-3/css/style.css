@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Playfair Display', serif, Arial, sans-serif;
+    color: #626262;
 } 
 /*сбросил настройки браузера по умолчанию..отступы*/
 
@@ -32,16 +35,36 @@ a:hover {
     color: blue;
 }
 
-main {
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+.wrap{
+    width: 1200px;
+    margin: auto;
 }
 
 .post {
     display: inline-block;
-    width: 450;
+    width: 420px;
+    height: 280px;
+    margin-right: 60px;
+    margin-bottom: 30px;
 }
+
+.post:nth-child(even){
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+p.slogan {
+padding: 
+
+}
+
+.menu {
+    margin-bottom: 100px;
+    margin-top: 75px;
+}
+
 
 
 
