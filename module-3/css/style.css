@@ -17,17 +17,16 @@ ul.menu {
 /*убрал нумерованный список, выстроил по центру навигацию */
 
 .menu a {
-    color: grey;
+    color: #626262;
     text-decoration: none;
     display: inline-block;
-    width: 90px;
-    height: 20px;
 }
 /*убрал подчеркивание ссылок, 
 сделал их серыми, установил размеры блока*/
 
 .menu li  {
     display: inline-block;
+    margin-right: 100px;
 }
 /*перевел список в строчно-блочную модель*/
 
@@ -36,13 +35,13 @@ a:hover {
 }
 
 .wrap{
-    width: 1200px;
+    width: 900px;
     margin: auto;
 }
 
 .post {
     display: inline-block;
-    width: 420px;
+    width: 418px;
     height: 280px;
     margin-right: 60px;
     margin-bottom: 30px;
@@ -50,19 +49,24 @@ a:hover {
 
 .post:nth-child(even){
     margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-right: 0;
 }
 
-p.slogan {
-padding: 
-
+p, h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .menu {
     margin-bottom: 100px;
     margin-top: 75px;
+}
+
+.type {
+    display: block;
+    margin: 0, auto;
+    text-align: center;
+    width: 160px;
+    height: 60px;
 }
 
 
