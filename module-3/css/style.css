@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
     font-family: 'Playfair Display', serif, Arial, sans-serif;
     color: #626262;
 } 
 /*сбросил настройки браузера по умолчанию..отступы*/
 
-ul.menu {
+.menu {
     list-style-type: none;
     text-align: center;
+    padding-left: 30px;
 }
 /*убрал нумерованный список, выстроил по центру навигацию */
 
-.menu a {
+a {
     color: #626262;
     text-decoration: none;
     display: inline-block;
@@ -25,12 +25,13 @@ ul.menu {
 .menu li  {
     display: inline-block;
     margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 75px;
 }
 /*перевел список в строчно-блочную модель*/
 
-.menu {
-    margin-bottom: 100px;
-    padding-left: 30px;
+.menu li:last-child {
+    margin: 0;
 }
 
 a:hover {
@@ -41,6 +42,7 @@ a:hover {
     width: 900px;
     margin: auto;
 }
+
 .post {
     display: inline-block;
     width: 418px;
@@ -53,25 +55,17 @@ a:hover {
     margin-right: 0;
 }
 
-.menu li:last-child {
-    margin: 0;
-}
-
 p, h3{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.menu {
-    margin-bottom: 100px;
-    margin-top: 75px;
-}
-
 .type {
-    display: block;
+    display: inline-block;
     margin: 0, auto;
     width: 160px;
     height: 60px;
+    text-align: center;
 }
 
 
