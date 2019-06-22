@@ -67,11 +67,11 @@ li.menu-list:last-child {
   font-weight: 900;
   color: #515151;
   text-align: center;
-  margin-top: 100px; 
+  margin-top: 102px;
 }
 
 .title::after {
-  content:'';
+  content: "";
   background: #1abc9c;
   display: block;
   width: 168px;
@@ -83,41 +83,110 @@ li.menu-list:last-child {
 .products-block {
   display: block;
   width: 255px;
-  height: 322px;
   background: #e9f0fd;
+  margin-top: 92px;
+  margin-right: 30px;
+  float: left;
 }
 
 .products-block::after {
   display: table;
   content: "";
   clear: both;
+}
 
+.products-block:nth-child(4n + 5) {
+  margin-right: 0;
+}
+
+.products-block:nth-last-of-type(-n + 4) {
+  margin-top: 30px;
 }
 
 .products-info {
   width: 255px;
-  height: 40px;
+  height: 42px;
   background: #282828;
   color: #ffff;
 }
 
-.products-name{
+.products-block:hover .products-name {
+  background: #1abc9c;
+}
+
+.products-block:hover .products-price {
+  background: #7fd9c7;
+  opacity: 40%;
+}
+
+.products-name {
   display: block;
-  width: 200px;
-  height: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  width: 201px;
+  height: 42px;
   float: left;
-  padding: 15, 80, 12, 14;
+  padding-top: 12px;
+  padding-left: 14px;
+  background: #323232;
 }
 
 .products-price {
   display: block;
+  font-size: 18px;
+  font-weight: 900;
   width: 54px;
-  height: 40px;
+  height: 42px;
   margin: 0;
   float: right;
+  background: #818181;
+  text-align: center;
+  padding-top: 12px;
 }
 
+.news {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 74px;
+  margin-right: 30px;
+  text-transform: none;
+  width: 350px;
+  font-weight: 600;
+  float: left;
+}
 
+.news:last-child {
+  margin-right: 0;
+}
 
+.news-list {
+  font-size: 18px;
+  padding-right: 50px;
+}
 
+.news-list::after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  width: 136px;
+  height: 4px;
+  margin-top: 12px;
+}
 
+.news-list-item {
+  font-size: 14px;
+  padding-top: 26px;
+  padding-right: 10px;
+  font-weight: 400;
+}
+
+button {
+  display: block;
+  height: 50px;
+  width: 160px;
+  margin-top: 14px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background: #1abc9c;
+}
