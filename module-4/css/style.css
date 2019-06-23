@@ -113,16 +113,12 @@ li.menu-list:last-child {
 }
 
 .products-block .products-price {
- background: rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .products-block:hover .products-info {
-background: #1abc9c;
-}
-
-.products-block:hover .products-name {
   background: #1abc9c;
-  }
+}
 
 .products-name {
   display: block;
@@ -133,7 +129,6 @@ background: #1abc9c;
   float: left;
   padding-top: 12px;
   padding-left: 14px;
-  background: #323232;
 }
 
 .products-price {
@@ -144,7 +139,6 @@ background: #1abc9c;
   height: 42px;
   margin: 0;
   float: right;
-  background: #818181;
   text-align: center;
   padding-top: 12px;
 }
