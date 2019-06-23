@@ -106,10 +106,14 @@ li.menu-list:last-child {
 }
 
 .products-info {
-  width: 255px;
-  height: 42px;
   background: #282828;
   color: #ffff;
+}
+
+.products-info::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .products-block .products-price {
