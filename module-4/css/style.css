@@ -13,18 +13,15 @@ header {
   margin-bottom: 102px;
 }
 
-nav {
-  float: right;
-  text-transform: uppercase;
-  margin-top: 28px;
-}
-
 ul {
   list-style: none;
+  float: right;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
+  color: #0f0101;
 }
 
 .logo {
@@ -34,6 +31,7 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   color: #555252;
+  margin: 30px 0 0;
 }
 
 .logo::first-letter {
@@ -43,6 +41,7 @@ a {
 
 li.menu-list {
   display: inline-block;
+  margin-top: 32px;
   margin-right: 34px;
 }
 
@@ -56,6 +55,7 @@ li.menu-list:last-child {
   color: #0f0101;
   font-weight: 700;
 }
+
 
 .menu-list-item:hover {
   color: #1abc9c;
@@ -105,10 +105,9 @@ li.menu-list:last-child {
 .products-info {
   background: #282828;
   color: #ffff;
-}
-
-.products-block .products-price {
-  background: rgba(255, 255, 255, 0.4);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .products-block:hover .products-info {
@@ -117,26 +116,22 @@ li.menu-list:last-child {
 
 .products-name {
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
   width: 201px;
   height: 42px;
   float: left;
-  padding-top: 12px;
-  padding-left: 14px;
+  padding-top: 10px;
+  padding-left: 12px;
 }
 
 .products-price {
   display: block;
-  font-size: 18px;
-  font-weight: 900;
   width: 54px;
   height: 42px;
   margin: 0;
   float: right;
   text-align: center;
   padding-top: 12px;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .news {
@@ -144,8 +139,8 @@ li.menu-list:last-child {
   margin-right: 30px;
   text-transform: none;
   width: 350px;
-  font-weight: 600;
   float: left;
+  letter-spacing: -0.02em;
 }
 
 .news:last-child {
@@ -153,7 +148,6 @@ li.menu-list:last-child {
 }
 
 .news-list {
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 12px;
@@ -169,23 +163,23 @@ li.menu-list:last-child {
 }
 
 .news-list-item {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-}
-
-button {
-  display: block;
-  height: 50px;
-  width: 160px;
-  margin-top: 14px;
-  margin-bottom: 45px;
-  text-align: center;
-  background: #1abc9c;
-  border-radius: 5px;
+  margin-bottom: 16px;
 }
 
 .button {
-  font-size: 16px;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    height: 50px;
+    width: 160px;
+    padding-top: 14px;
+    margin-bottom: 46px;
+    text-align: center;
+    background: #1abc9c;
+    border-radius: 5px;
 }
+
