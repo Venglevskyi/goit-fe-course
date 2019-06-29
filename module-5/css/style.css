@@ -87,75 +87,64 @@ header {
   object-fit: cover;
 }
 
-.slider-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.wrapper-content {
+  position: relative;
+  transform: translate(0%,-100%);
   margin: 0 auto;
   width: 1110px;
   height: 600px;
-}
-
-.slider-text {
-  position: relative;
-  margin: auto;
-  width: 760px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  font-weight: 600;
-  letter-spacing: -0, 02em;
-  text-transform: uppercase;
   z-index: 1;
 }
 
-.slider-paragraph {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffffff;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.slider-ctrl {
-  position: relative;
-  height: 104px;
-}
 
 .ctrl-prev {
   position: absolute;
+  bottom: 50%;
+  left: 0;
   width: 104px;
   height: 104px;
+  background: #1abc9c;
   border: none;
-  background-color: #1abc9c;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  z-index: 1;
+}
+
+.ctrl-prev:hover {
+  background: rgba(78, 198, 171, 0.65)
 }
 
 .ctrl-next {
   position: absolute;
+  bottom: 50%;
+  right: 0;
   width: 104px;
   height: 104px;
+  background: #1abc9c;
   border: none;
-  background-color: #1abc9c;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 1;
 }
 
-.:hover {
-  background: rgba(78, 198, 171, 0.65);
+.ctrl-next:hover {
+  background: rgba(78, 198, 171, 0.65)
+}
+
+.wrapper-content-text {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.wrapper-content-text-headline{
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -0,02em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.wrapper-content-text-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 
