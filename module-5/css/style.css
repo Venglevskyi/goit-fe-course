@@ -5,14 +5,14 @@
   text-decoration: none;
 }
 
-header {
+nav {
+  float: right;
+}
+
+.container {
   width: 1110px;
   height: 90px;
   margin: 0 auto;
-}
-
-nav {
-  float: right;
 }
 
 .logo {
@@ -67,7 +67,7 @@ nav {
   clear: both;
 }
 
-  .slider {
+  /*.slider {
   position: relative;
   top: 0;
   width: 100%;
@@ -92,12 +92,10 @@ nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 205px; 
-  margin-right: 205px;
+  margin: 0 auto;
   width: 1110px;
   height: 600px;
   z-index: 1;
- 
 }
 
 
