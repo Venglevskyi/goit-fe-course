@@ -66,22 +66,14 @@ nav {
   clear: both;
 }
 
-.slider {
-  position: relative;
-}
-
-.slider-img {
+img {
   width: 100%;
   object-fit: cover;
 }
 
-.slider-container {
-  width: 1110px;
-  margin: 0 auto;
+.slider-img {
+  width: 100%;
 }
-
-
-
   /*.slider {
   position: relative;
   top: 0;
