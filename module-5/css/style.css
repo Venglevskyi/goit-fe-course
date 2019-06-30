@@ -11,7 +11,6 @@ nav {
 
 .container {
   width: 1110px;
-  height: 90px;
   margin: 0 auto;
 }
 
@@ -66,6 +65,22 @@ nav {
   content: "";
   clear: both;
 }
+
+.slider {
+  position: relative;
+}
+
+.slider-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+
 
   /*.slider {
   position: relative;
