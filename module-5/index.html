@@ -13,11 +13,11 @@
     <title>Homework-5</title>
   </head>
   <body>
-    <header class="clearfix">
-      <div class="container">
+    <header>
+      <div class="container clearfix">
         <h1 class="logo"><a class="logo-letter" href="#">mart </a></h1>
-        <nav class="clearfix">
-          <ul class="menu ">
+        <nav>
+          <ul class="menu clearfix">
             <li class="menu-list">
               <a class="menu-list-item" href="#">home</a>
             </li>
@@ -40,9 +40,9 @@
         </nav>
       </div>
     </header>
-    <section class="slider">
+    <div class="slider">
       <div class="slider-wrap">
-        <img src="./img/homework-05_02.png" alt="" />
+        <img class="slider-img" src="./img/homework-05_02.png" alt="" />
       </div>
       <div class="slider-container">
         <button class="ctrl-prev">
@@ -51,11 +51,25 @@
         <button class="ctrl-next">
           <img src="./img/next.png" alt="" />
         </button>
-        <h2 class="title">
-          affortable paris tours
-          <span class="text" >city tours/tour tickets/tour guides</span>
-        </h2>
+        <h2 class="headline">affortable paris tours</h2>
+        <p class="paragraph">city tours/tour tickets/tour guides</p>
       </div>
-    </section>
+    </div>
+    <main>
+      <section class="card-collection ">
+        <h3 class="title-headline">new collection</h3>
+        <div class="container clearfix">
+          <div class="card-products">
+            <a href="#">
+              <img class="card-img" src="./img/category-2.png" alt="">
+              <div class="card-products-info clearfix">
+                <h3 class="card-products-name">Blue Tshirt</h3>
+                <div class="card-products-price">$26</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

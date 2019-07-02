@@ -43,6 +43,7 @@ nav {
   font-size: 14px;
   color: #0f0101;
   font-weight: 700;
+  font-size: 0;
 }
 
 .menu-list {
@@ -56,6 +57,7 @@ nav {
 
 .menu-list-item {
   color: #0f0101;
+  font-size: 14px;
 }
 
 .menu-list-item:hover {
@@ -88,6 +90,7 @@ nav {
 
 .slider {
   position: relative;
+  width: 100%;
 }
 
 .slider-container {
@@ -134,56 +137,54 @@ nav {
   background: rgba(78, 198, 171, 0.65);
 }
 
-.title {
-  position: absolute;
+
+.headline {
   display: block;
-  width: 100%;
-  top: 50%;
-  bottom: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  top: 0;
+  left: 0;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
   letter-spacing: -0,02em;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0 auto;
-  text-align: center;
+  line-height: 50px;
 }
 
-.text {
-  position: absolute;
+.paragraph {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: block;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
-  text-align: center;
 }
 
-/*.collection {
+.card-collection {
+  width: 100%;
   background: #e9f0fd;
-  padding-top: 90px;
-  width: 1600px;
-  height: 676px;
 }
 
-.wrapper {
+.container {
   width: 1110px;
   margin: 0 auto;
   position: relative;
 }
 
-
-.title {
+.title-headline {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
   color: #515151;
   text-align: center;
+  padding-top: 92px;
 }
 
-.title::after {
+.title-headline::after {
   content: "";
   background: #1abc9c;
   display: block;
@@ -192,20 +193,23 @@ nav {
   margin: 24px auto 80px;
 }
 
-.products {
+.card-products {
+  position: relative;
   width: 255px;
-  height: 322px;
-  background: #e9f0fd; 
-  margin-right: 30px;
   float: left;
   text-transform: uppercase;
 }
 
-.products:last-child {
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-products:last-child {
   margin-right: 0;
 }
 
-.products-info {
+.card-products-info {
   background: #282828;
   color: #ffff;
   font-family: "Roboto", sans-serif;
@@ -213,20 +217,20 @@ nav {
   font-weight: 900;
 }
 
-.products:hover .products-info {
+.card-products:hover .card-products-info {
   background: #1abc9c;
 }
 
 
-.products-name {
-  width: 201px;
+.card-products-name {
+  width: 200px;
   height: 42px;
   float: left;
   padding-top: 15px;
   padding-left: 12px;
 }
 
-.products-price {
+.card-products-price {
   width: 54px;
   height: 42px;
   margin: 0;
@@ -236,21 +240,14 @@ nav {
   background: rgba(255, 255, 255, 0.4);
 }
 
-.products-img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  line-height: 0;
-}
-
-.card-overlay {
-  position: absolute;
+.card-img:hover{
+  /*position: absolute;
+  display: none;
   top: 10px;
   left: 10px;
   right: 10px;
-  bottom: 10px;
+  bottom: 10px;*/
   background: rgba(0, 0, 0, 0.5);
-}*/
+}
 
 
