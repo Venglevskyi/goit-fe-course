@@ -56,6 +56,7 @@ nav {
 }
 
 .menu-list-item {
+  display: block;
   color: #0f0101;
   font-size: 14px;
 }
@@ -94,24 +95,14 @@ nav {
 }
 
 .slider-container {
-  position: absolute;
-  height: 100%;
   width: 1110px;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%,0);
+  margin: 0 auto;
 }
 
 .ctrl-prev {
   width: 104px;
   height: 104px;
   background: #1abc9c;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  bottom: 50%;
-  transform: translate(0,-50%);
   cursor: pointer;
   border: none;
 }
