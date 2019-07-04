@@ -95,7 +95,13 @@ nav {
 }
 
 .slider-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 1110px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -103,6 +109,10 @@ nav {
   width: 104px;
   height: 104px;
   background: #1abc9c;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0,-50%);
   cursor: pointer;
   border: none;
 }
@@ -118,7 +128,6 @@ nav {
   position: absolute;
   right: 0;
   top: 50%;
-  bottom: 50%;
   transform: translate(0,-50%);
   cursor: pointer;
   border: none;
@@ -128,30 +137,28 @@ nav {
   background: rgba(78, 198, 171, 0.65);
 }
 
-
-.headline {
-  display: block;
+.text {
   position: relative;
-  top: 0;
-  left: 0;
+  width: 760px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  line-height: 80px; 
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text-headline {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
   letter-spacing: -0,02em;
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 50px;
 }
 
-.paragraph {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  display: block;
+.text-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #ffffff;
 }
 
 .card-collection {
@@ -159,9 +166,10 @@ nav {
   background: #e9f0fd;
 }
 
-.container {
+.card-container {
   width: 1110px;
   margin: 0 auto;
+  padding-bottom: 100px;
   position: relative;
 }
 
@@ -187,13 +195,14 @@ nav {
 .card-products {
   position: relative;
   width: 255px;
+  height: 322px;
   float: left;
   text-transform: uppercase;
+  margin-right: 30px;
 }
 
 .card-img {
-  width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .card-products:last-child {
@@ -231,14 +240,77 @@ nav {
   background: rgba(255, 255, 255, 0.4);
 }
 
-.card-img:hover{
-  /*position: absolute;
-  display: none;
+.card-overlay {
+  position: absolute;
+  height: 302px;
   top: 10px;
   left: 10px;
   right: 10px;
-  bottom: 10px;*/
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 10px;
+  opacity: 0;
+  margin: 0 auto;
 }
 
+.card-products:hover .card-overlay {
+  background: rgb(0, 0, 0);
+  opacity: 0.55;
+}
 
+.wrap {
+  width: 168px;
+  margin: 80px auto 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, .55);
+  border: 1px solid #ffffff;
+  margin-right: 4px;
+}
+
+.icon:nth-child(3){
+margin-right: 0;
+}
+
+.icon-btn {
+width: 166px;
+margin-top: 5px;
+color: #ffffff;
+background: #323232;
+opacity: 1;
+text-transform: uppercase;
+float: left;
+}
+
+.icon-btn-text {
+  float: right;
+  padding-top: 6px;
+  padding-right: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.icon:hover {
+  background: #1abc9c;
+}
+
+footer {
+  width: 100%;
+  padding: 34px 0px;
+  background-color: #323232;
+}
+
+.license {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+}
+
+.about-designed {
+color: #46bfa9;
+}
