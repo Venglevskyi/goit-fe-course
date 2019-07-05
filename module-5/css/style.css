@@ -71,16 +71,14 @@ nav {
   clear: both;
 }
 
-.slider-wrap {
-  position: relative;
-}
-
-.slider-img {
+.slider {
   width: 100%;
-  object-fit: cover;
+  height: 600px;
+  position: relative;
+  background-image: url(../img/homework-05_02.png);
 }
 
-.slider-wrap::before {
+.slider::before {
   position: absolute;
   content: "";
   display: block;
@@ -89,79 +87,229 @@ nav {
   background: rgba(0, 0, 0, 0.52);
 }
 
-.slider {
-  position: relative;
-  width: 100%;
-}
-
 .slider-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 1110px;
-  height: 100%;
+  height: 600px;
   margin: 0 auto;
+  position: relative;
+  top: 0;
 }
 
-.ctrl-prev {
+.button-ctrl {
   width: 104px;
   height: 104px;
   background: #1abc9c;
+  cursor: pointer;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-ctrl-prev {
   left: 0;
-  top: 50%;
-  transform: translate(0,-50%);
-  cursor: pointer;
-  border: none;
+  background-image: url(../img/prev.png);
 }
 
-.ctrl-prev:hover {
-  background: rgba(78, 198, 171, 0.65);
-}
-
-.ctrl-next {
-  width: 104px;
-  height: 104px;
-  background: #1abc9c;
-  position: absolute;
+.button-ctrl-next {
   right: 0;
-  top: 50%;
-  transform: translate(0,-50%);
-  cursor: pointer;
-  border: none;
+  background-image: url(../img/next.png);
 }
 
-.ctrl-next:hover {
-  background: rgba(78, 198, 171, 0.65);
+.button-ctrl:hover {
+  background-color: rgba(78, 198, 171, 0.65);
 }
 
-.text {
+.slider-about {
   position: relative;
   width: 760px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  line-height: 80px; 
+  transform: translate(-50%, -50%);
+  line-height: 80px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.text-headline {
+.slider-about-headline {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
-  letter-spacing: -0,02em;
+  letter-spacing: -0, 02em;
 }
 
-.text-paragraph {
+.slider-about-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
 
-.card-collection {
+.collection {
+  background: #e9f0fd;
+}
+
+.title-headline {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #515151;
+  text-align: center;
+  padding-top: 92px;
+  margin-bottom: 80px;
+}
+
+.title-headline::after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  width: 168px;
+  height: 8px;
+  margin: 24px auto 0;
+}
+
+.products {
+  width: 100%;
+}
+
+.card-products {
+  width: 255px;
+  height: 322px;
+  margin-right: 30px;
+  float: left;
+  position: relative;
+}
+
+.img {
+  height: 282px;
+  position: relative;
+}
+
+.info {
+  background: #282828;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+}
+
+.name {
+  width: 200px;
+  height: 42px;
+  float: left;
+  padding-top: 14px;
+  padding-left: 16px;
+  text-transform: uppercase;
+}
+
+.price {
+  width: 54px;
+  height: 42px;
+  margin: 0;
+  float: right;
+  text-align: center;
+  padding-top: 14px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.card-products:hover .info {
+  background: #1abc9c;
+}
+
+.overlay {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.buttons-icon {
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border: 1px solid #ffffff;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  float: left;
+}
+
+.like {
+  background-image: url(../img/6.png);
+}
+
+.share {
+  background-image: url(../img/2.png);
+}
+
+.clock {
+  background-image: url(../img/3.png);
+}
+
+.basket {
+  width: 168px;
+  height: 50px;
+  float: left;
+  background-image: url(../img/4.png);
+}
+
+
+
+
+
+
+/*.card-products {
+  position: relative;
+  width: 255px;
+  height: 322px;
+  float: left;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.card-products-img {
+  background-image: url(../img/category-2.png);
+}
+
+.card-products-info {
+  background: #282828;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.card-products:hover .card-products-info {
+  background: #1abc9c;
+}
+
+.card-products-name {
+  width: 200px;
+  height: 42px;
+  float: left;
+  padding-top: 15px;
+  padding-left: 12px;
+}
+
+.card-products-price {
+  width: 54px;
+  height: 42px;
+  margin: 0;
+  float: right;
+  text-align: center;
+  padding-top: 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/*.card-collection {
   width: 100%;
   background: #e9f0fd;
 }
@@ -249,10 +397,12 @@ nav {
   bottom: 10px;
   opacity: 0;
   margin: 0 auto;
+  background: rgb(0, 0, 0, 0.55);
+  opacity:0;
 }
 
 .card-products:hover .card-overlay {
-  background: rgb(0, 0, 0);
+  
   opacity: 0.55;
 }
 
@@ -314,3 +464,9 @@ footer {
 .about-designed {
 color: #46bfa9;
 }
+
+img {
+  display: block;
+  margin: auto;
+  vertical-align: middle;
+}*/
