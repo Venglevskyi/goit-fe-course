@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 124px;
+  padding-bottom: 122px;
 }
 
 .menu {
@@ -284,4 +284,55 @@ p {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
+  margin-bottom: 82px;
 }
+
+hr {
+  height: 1px;
+  background: #e5e5e5;
+}
+
+/*FOOTER*/
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+}
+
+.license-info {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+.license {
+  color: #f38181;
+}
+
+.input-email {
+  height: 40px;
+  width: 230px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+}
+
+.button {
+  border: none;
+  height: 40px;
+  width: 150px;
+  background: #95e1d3;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
