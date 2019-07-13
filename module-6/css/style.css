@@ -35,6 +35,7 @@
 
 .site-logo {
   color: #95e1d3;
+  display: block;
 }
 
 .menu-list {
@@ -52,6 +53,7 @@
 
 .menu-list-item {
   color: #95e1d3;
+  display: block;
 }
 
 .menu-list-item:hover,
@@ -73,7 +75,7 @@
 }
 
 .menu-list-item:hover::after,
-.menu-list-item:hover::after {
+.menu-list-item:focus::after {
   width: 100%;
 }
 
@@ -88,6 +90,12 @@ main {
   text-align: center;
   color: #333333;
   line-height: 40px;
+  display: block;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 42px;
 }
 
 .about::after {
@@ -96,17 +104,11 @@ main {
   display: block;
   width: 60px;
   height: 4px;
-  margin: 38px auto 60px;
+  margin: 38px auto 0;
 }
 
-h2 {
+.about-list {
   display: block;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-span {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -205,6 +207,7 @@ p {
 
 .team-img:hover .overlay {
   opacity: 1;
+  transition: color 0.2s linear;
 }
 
 .team-img:hover {
@@ -238,16 +241,23 @@ p {
 }
 
 .icon-tools {
-  width: 56px;
-  height: 56px; 
-  background: #fce38a;
-  background-repeat: no-repeat;
-  background-position: center;
   border: 1px solid #fbd389;
 }
 
-.icon-tools:hover {
+.icon-tools-item {
+  display: block; 
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.icon-tools-item:hover,
+.icon-tools-item:focus {
   background-color: #95e1d3;
+  transition: color 0.2s linear;
 }
 
 .facebook {
@@ -284,15 +294,14 @@ p {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
-  margin-bottom: 82px;
-}
-
-hr {
-  height: 1px;
-  background: #e5e5e5;
+  padding-bottom: 82px;
 }
 
 /*FOOTER*/
+
+footer{
+  border-top: 1px solid  #e5e5e5;
+}
 
 .wrap {
   display: flex;
@@ -333,6 +342,5 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  
 }
 
