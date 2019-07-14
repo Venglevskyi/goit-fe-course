@@ -203,17 +203,16 @@ p {
   height: 470px;
   margin-bottom: 26px;
   position: relative;
+  transition: transform 0.2s linear;
 }
 
 .team-img:hover .overlay {
   opacity: 1;
-  transition: color 0.2s linear;
 }
 
 .team-img:hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
-  transition: width 0.2s linear;
 }
 
 .overlay {
@@ -252,13 +251,14 @@ p {
   background-color: #fce38a;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 0.2s linear;
 }
 
 
 .icon-tools-item:hover,
 .icon-tools-item:focus {
   background-color: #95e1d3;
-  transition: width 0.2s linear;
+  /*transition: width 0.2s linear;*/
 }
 
 .facebook {
