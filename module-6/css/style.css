@@ -213,7 +213,7 @@ p {
 .team-img:hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
-  transition: color 0.2s linear;
+  transition: width 0.2s linear;
 }
 
 .overlay {
@@ -241,7 +241,8 @@ p {
 }
 
 .icon-tools {
-  border: 1px solid #fbd389;
+  border-right: 1px solid #fbd389;
+  background: #fbd389;
 }
 
 .icon-tools-item {
@@ -257,7 +258,7 @@ p {
 .icon-tools-item:hover,
 .icon-tools-item:focus {
   background-color: #95e1d3;
-  transition: color 0.2s linear;
+  transition: width 0.2s linear;
 }
 
 .facebook {
@@ -333,8 +334,7 @@ footer{
 
 .button {
   border: none;
-  height: 40px;
-  width: 150px;
+  padding: 12px 32px;
   background: #95e1d3;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
