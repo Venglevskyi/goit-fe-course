@@ -133,7 +133,7 @@
 /*SECTION 2*/
 
 .contact {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
@@ -151,7 +151,6 @@
   content: "";
   display: block;
   width: 940px;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -194,5 +193,4 @@ form {
   text-transform: uppercase;
   cursor: pointer;
   margin: 0 auto 114px;
- vertical-align: baseline;
 }
