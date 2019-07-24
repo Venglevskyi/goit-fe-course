@@ -18,15 +18,19 @@
 .container {
   min-width: 320px;
   margin: 0 auto;
-  padding: 20px 20px 138px 20px;
+  padding: 0 20px;
 }
 
 /*HEADER*/
 
+header {
+  padding: 30px 0;
+}
+
 .menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 170px;
+  padding-bottom: 170px;
 }
 
 .button-log {
@@ -47,10 +51,9 @@
 
 .logo {
   text-align: center;
-  margin-bottom: 30px;
   display: block;
   text-transform: uppercase;
-  margin: 0 0 30px 0;
+  margin: 0 auto;
 }
 
 .site-logo {
@@ -92,12 +95,17 @@
   background-color: #ff4e50;
   color: inherit;
   padding: 14px 50px;
+  margin-bottom: 138px; 
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
 /*SECTION-TEAM*/
+
+.wrapper {
+  min-width: 320px;;
+}
 
 .text-title {
   font-family: "Montserrat";
@@ -109,18 +117,24 @@
 }
 
 .partners {
-  width: 200px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card-partners {
+.partners-card {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.partners-img {
+  width: 220px;
   height: auto;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
 
-.card-partners::before {
+.partners-img::before {
   content: "";
   display: block;
   width: 40px;
@@ -156,8 +170,9 @@
 }
 
 .team-info {
+  width: 220px;
   text-align: center;
-  margin-bottom: 26px;
+  margin: 0 auto;
 }
 
 .team-name {
@@ -180,7 +195,7 @@
   font-size: 14px;
   color: #ff4e50;
   background-color: #ffffff;
-  padding: 14px 50px;
+  padding: 14px 70px;
   border: 2px solid #ff4e50;
   border-radius: 26px;
   cursor: pointer;
