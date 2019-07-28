@@ -17,6 +17,7 @@
 
 .container {
   min-width: 320px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -27,16 +28,14 @@ a {
 
 /*HEADER*/
 
-
 nav {
-  padding: 30px 0 120px;
+  padding: 0 0 120px;
 }
 
 .menu {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
+  padding-top: 30px;
 }
 
 .button-log {
@@ -56,7 +55,6 @@ nav {
 }
 
 .logo {
-  text-align: center;
   display: block;
   text-transform: uppercase;
   padding-bottom: 30px;
@@ -69,6 +67,7 @@ nav {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
 }
 
 .site-logo:hover {
@@ -107,12 +106,12 @@ color: #ffffff;
   font-size: 14px;
   color: #ff4e50;
   background-color: #ffffff;
-  padding: 12px 0px;
+  padding: 12px 40px;
   border-radius: 26px;
   border: 2px solid #ff4e50;
   margin: 0 auto;
   transition: color 0.2s linear;
-  display: block;
+  display: inline-block;
 }
 
 .btn-holiday {
@@ -138,18 +137,17 @@ color: #ffffff;
   font-size: 22px;
   text-align: center;
   padding: 0 26px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .partners {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 30px;
 }
 
 .partners-card {
   width: 100%;
-  margin-bottom: 22px;
+  padding-bottom: 22px;
 }
 
 .partners-img {
@@ -214,16 +212,11 @@ color: #ffffff;
   font-size: 14px;
 }
 
-.btn-other {
-  
-}
-
 .btn-other:hover,
 .btn-other:focus {
   background-color: #ff4e50;
   color: #ffffff;
 }
 
-/*Bootstrap*/
 
 
