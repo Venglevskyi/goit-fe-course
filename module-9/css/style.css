@@ -15,12 +15,6 @@
   width: 100%;
 }
 
-.container {
-  min-width: 320px;
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 a {
   color:inherit;
@@ -73,6 +67,7 @@ nav {
 .site-logo:hover {
 color: #ffffff;
 }
+
 
 /*SECTION PROMO*/
 
