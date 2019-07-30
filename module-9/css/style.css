@@ -127,7 +127,6 @@ nav {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 22px;
-  text-align: center;
   padding: 0 26px;
 }
 
@@ -138,7 +137,6 @@ nav {
 
 .partners-card {
   padding-bottom: 22px;
-  margin: 0 auto;
 }
 
 .partners-img {
