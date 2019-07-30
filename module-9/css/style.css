@@ -84,6 +84,7 @@ nav {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  width: 320px;
 }
 
 .text-light {
@@ -180,9 +181,6 @@ nav {
   background-image: url(../img/Shape170.png);
 }
 
-.team-info {
-  text-align: center;
-}
 
 .team-name {
   font-family: "Montserrat";
@@ -196,6 +194,7 @@ nav {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 14px;
+  text-align: center;
 }
 
 .btn-other:hover,
