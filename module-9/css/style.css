@@ -13,11 +13,15 @@
   background-size: cover;
   background-color: rgba(26, 25, 21, 1);
   width: 100%;
+  padding-top: 35px;
 }
 
-
 a {
-  color:inherit;
+  color: inherit;
+}
+
+.container {
+  min-width: 320px;
 }
 
 /*HEADER*/
@@ -29,7 +33,6 @@ nav {
 .menu {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
 }
 
 .button-log {
@@ -65,16 +68,15 @@ nav {
 }
 
 .site-logo:hover {
-color: #ffffff;
+  color: #ffffff;
 }
-
 
 /*SECTION PROMO*/
 
 .promo {
   text-align: center;
   color: #ffffff;
-  padding-bottom: 138px; 
+  padding-bottom: 138px;
 }
 
 .banner-text {
@@ -82,8 +84,6 @@ color: #ffffff;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  width: 278px;
-  margin: 0 auto 12px;
 }
 
 .text-light {
@@ -91,8 +91,7 @@ color: #ffffff;
   font-weight: 300;
   font-size: 18px;
   display: block;
-  width: 300px;
-  margin: 0 auto 50px;
+  padding-bottom: 30px;
 }
 
 .btn-partner {
@@ -101,7 +100,7 @@ color: #ffffff;
   font-size: 14px;
   color: #ff4e50;
   background-color: #ffffff;
-  padding: 12px 40px;
+  /*padding: 12px 40px;*/
   border-radius: 26px;
   border: 2px solid #ff4e50;
   margin: 0 auto;
@@ -212,6 +211,3 @@ color: #ffffff;
   background-color: #ff4e50;
   color: #ffffff;
 }
-
-
-
