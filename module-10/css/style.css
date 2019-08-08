@@ -324,9 +324,9 @@ fill: #f38181;
   fill: #ffffff;
 } 
 
-.social-icon__list:hover
+.social-icon__list:hover,
 .social-icon__list:focus {
-  background-color: #f38181;
+  background: #f38181;
 }
 
 .info {
