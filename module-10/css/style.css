@@ -180,7 +180,7 @@ svg:hover {
 
 /*SECTION SERVICES*/
 
-.services__card {
+.services-card {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -301,7 +301,6 @@ svg:hover {
 }
 
 .social-icon__list {
-  display: block;
   width: 56px;
   height: 56px;
   background-color: #fce38a;
@@ -316,14 +315,12 @@ svg:hover {
   fill: #f38181;
 }
 
-.icon:hover,
-.icon:focus {
+.social-icon__list:hover .icon {
   fill: #ffffff;
 }
 
-.social-icon__list:hover,
-.social-icon__list:focus {
-  background: #f38181;
+.social-icon__list:hover {
+  background-color: #f38181;
 }
 
 .info {
