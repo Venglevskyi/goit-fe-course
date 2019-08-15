@@ -1,0 +1,41 @@
+.site-menu {
+
+  &__item {
+    width: 600px;
+    @extend %justify;
+  }
+  
+  &__list {
+    position: relative;
+  }
+  
+  &__link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-secondary-text;
+    font-weight: 400;
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    color: $primary-icon-bg;
+  }
+  
+  &__link::after {
+    content: "";
+    background: $primary-icon-bg;
+    display: block;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+    margin-top: 12px;
+  }
+  
+  &__link:hover::after,
+  &__link:focus::after {
+    width: 100%;
+  }
+}

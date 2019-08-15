@@ -1,0 +1,11 @@
+.logo {
+    margin: 0;
+    font-size: 30px;
+    font-family: $font-secondary-text;
+    font-weight: 700;
+
+    &__link:hover,
+    &__link:focus {
+  color: $primary-icon-bg;
+}
+  }

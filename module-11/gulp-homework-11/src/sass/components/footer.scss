@@ -1,0 +1,45 @@
+.footer {
+    border-top: 1px solid #e5e5e5;
+    @extend %justify;
+    height: 62px;
+    align-items: center;
+
+  
+  &__license {
+    font-size: 14px;
+    font-family: $font-secondary-text;
+    font-weight: 400;
+    color: $additional-text-color;
+  }
+  
+  &__license-link {
+    color: $additional-icon-bg;
+    text-transform: none;
+  }
+
+  &__input-email {
+    height: 40px;
+    width: 230px;
+    color: $input-color;
+    font-family: $font-primary-text;
+    font-style: italic;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+  }
+  
+  &__button {
+    border: none;
+    padding: 12px 32px;
+    background: $button-color;
+    color: $link-color;
+    font-family: $font-secondary-text;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  &__button:hover {
+    background: $button-accent-color;
+  }
+}

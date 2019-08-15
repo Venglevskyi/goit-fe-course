@@ -1,0 +1,43 @@
+.team-card {
+
+      text-align: center;
+
+    &__img {
+        display: block;
+        height: 470px;
+        margin-bottom: 26px;
+        position: relative;
+        transition: transform 0.2s linear;
+      }
+      
+      &__img:hover &__overlay {
+        opacity: 1;
+      }
+      
+      &__img:hover {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px #95e1d3;
+      }
+      
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 380px;
+        height: 470px;
+        background: $main-fon-color;
+        opacity: 0;
+      }
+
+      &__name {
+        text-transform: uppercase;
+        font-family: $font-secondary-text;
+      }
+      
+      &__position {
+        color: $primary-text-color;
+        font-family: $font-primary-text;
+        font-style: italic;
+        padding-bottom: 84px;
+      }
+}

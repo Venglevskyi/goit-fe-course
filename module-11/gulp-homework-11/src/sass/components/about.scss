@@ -1,0 +1,33 @@
+.about {
+    display: block;
+    width: 820px;
+    text-align: center;
+    margin: 0 auto;
+    color: $link-color;
+  
+  &__title {
+    display: block;
+    font-family: $font-text-title;
+    font-size: 72px;
+    font-weight: 400;
+  }
+  
+  &__slogan {
+    display: block;
+    font-family: $font-secondary-text;
+    font-weight: 700;
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 140px;
+  }
+  
+  &__more {
+    display: inline-block;
+    font-size: 14px;
+    font-family: $font-secondary-text;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    padding: 6px 20px;
+    margin: 100px 0 230px;
+  }
+}
