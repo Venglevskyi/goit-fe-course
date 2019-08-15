@@ -590,6 +590,30 @@ svg:hover {
   font-weight: 400;
 }
 
+.alarm::before {
+  background-image: url(/gulp-homework-11/build/images/sprite.svg#icon-line);
+}
+
+.line::before {
+  background-image: url(../img/service-icons/line.svg);
+}
+
+.computer::before {
+  background-image: url(../img/service-icons/computer.svg);
+}
+
+.book::before {
+  background-image: url(../img/service-icons/book.svg);
+}
+
+.home::before {
+  background-image: url(../img/service-icons/home.svg);
+}
+
+.image::before {
+  background-image: url(../img/service-icons/image.svg);
+}
+
 .text-about {
   text-align: center;
   margin-bottom: 90px;
