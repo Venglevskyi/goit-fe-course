@@ -5,6 +5,7 @@
 .site-navigation,
 .site-menu__item,
 .services-card,
+.social-icon,
 .team,
 .footer {
   display: flex;
@@ -612,6 +613,25 @@ svg:hover {
 
 .image::before {
   background-image: url(../img/service-icons/image.svg);
+}
+
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 224px;
+}
+
+.social-icon__list {
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  border-right: 1px solid #fbd389;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s linear;
 }
 
 .text-about {
