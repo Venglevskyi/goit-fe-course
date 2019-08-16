@@ -1,0 +1,19 @@
+.social-icon {
+    @extend %justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 224px;
+  }
+  
+  &__list {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    border-right: 1px solid #fbd389;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s linear;
+  }
