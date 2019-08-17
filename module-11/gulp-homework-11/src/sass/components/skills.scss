@@ -1,7 +1,7 @@
 .skills {
     position: relative;
     width: 392px;
-    padding-left: 92px;
+    padding-left: 80px;
     margin-bottom: 90px;
     font-size: 14px;
     font-family: $font-secondary-text;
@@ -9,18 +9,6 @@
   
   &:nth-child(n + 3) {
     margin-bottom: 0;
-  }
-  
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 92px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   &__title {
@@ -33,28 +21,4 @@
     font-family: $font-primary-text;
     font-weight: 400;
   }
-}
-
-.alarm::before {
-  background-image: url(gulp-homework-11/build/images/sprite.svg#icon-line);
-}
-
-.line::before {
-  background-image: url(../img/service-icons/line.svg);
-}
-
-.computer::before {
-  background-image: url(../img/service-icons/computer.svg);
-}
-
-.book::before {
-  background-image: url(../img/service-icons/book.svg);
-}
-
-.home::before {
-  background-image: url(../img/service-icons/home.svg);
-}
-
-.image::before {
-  background-image: url(../img/service-icons/image.svg);
 }

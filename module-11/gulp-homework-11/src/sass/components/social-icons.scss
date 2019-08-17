@@ -9,11 +9,19 @@
   &__list {
     width: 56px;
     height: 56px;
-    background-color: #fce38a;
-    border-right: 1px solid #fbd389;
+    background-color: $primary-icon-bg;
+    border-right: 1px solid $primary-icon-bg;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s linear;
+  }
+
+  &__list:hover .icon {
+    fill: $link-color;
+  }
+  
+  &__list:hover {
+    background-color: $additional-icon-bg;
   }
 }
