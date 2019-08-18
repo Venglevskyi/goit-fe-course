@@ -16,7 +16,7 @@
       
       &__img:hover {
         transform: translate(-10px, -10px);
-        box-shadow: 10px 10px #95e1d3;
+        box-shadow: 10px 10px $button-accent-color;
       }
       
       &__overlay {
